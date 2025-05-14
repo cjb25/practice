@@ -1,0 +1,88 @@
+/*the overall page styles*/
+body {
+  margin: 0; /*removes default spacing*/
+  color: black; /*this is the default text color that will be overidden where needed*/
+  font-family: Arial, sans-serif; /*readable font for screen reader, sans-serif is the backup font if Arial fails to load*/
+  background-color: #000;
+}
+/*navbar styles*/
+nav {
+  display: flex; /*places items side by side horizontally*/
+  padding: 1rem; /*adds spaces inside of the nav bar*/
+  justify-content: space-between;
+  align-items: center; /*vertically centers content*/
+}
+/*logo placeholder styling*/
+.logo {
+  color: #f9c; /*light pink text*/
+  font-size: 1.5rem; /*makes the logo text bigger*/
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 250px;
+}
+/*style the links container*/
+.nav-links {
+  display: flex; /*side by side*/
+  list-style: none; /*removes bullet points*/
+  gap: 1rem; /*space between each link*/
+  padding: 0;
+  margin: 0;
+  margin-right: 100px;
+  font-size: 1.5rem;
+}
+/* individual link styles*/
+.nav-links a {
+  text-decoration: none; /*removes underline*/
+  font-weight: bold;
+  color: #f9c;
+}
+/*section holding yellow boxes*/
+.content {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex; /*places items vertically or horizontally*/
+  flex-direction: column; /*stack boxes vertically*/
+  align-items: center; /*center both horizontal*/
+  margin-top: 5rem; /*space from top of nav bar*/
+  gap: 2rem; /*space between boxes*/
+}
+/*link to look like a button*/
+.styled-link {
+  background-color: yellow;
+  color: black;
+  padding: 1rem; /*added space inside of the box*/
+  text-decoration: none; /*no underline*/
+  display: inline-block; /*allows padding and margin*/
+  border-radius: 8px; /*rounded corners*/
+  font-weight: bold;
+}
+/* real button */
+.styled-button {
+  background-color: yellow;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none; /*removes border*/
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /*add a subtle shadow, I cannot tell if this worked or not should be 2px right, 2px down, 5px blur*/
+  border-radius: 3px; /*slightly rounded corners*/
+  cursor: pointer;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.space-image {
+  display: block;
+  margin: 0 auto; /*centers the image on my page*/
+  height: 350px;
+  width: 600px; /*width of image on desktop*/
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 649px) {
+  .space-image {
+    width: 95%; /*takes up most of the mobile size screen*/
+    height: auto; /*height will adjust to keep the shape*/
+  }
+}

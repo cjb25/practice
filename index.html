@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Nav Bar Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--all the links and buttons need aria-labels, roles, elements for screen reader-->
+
+    <body>
+      <!--main container for everything-->
+      <main role="main">
+        <!--navigation bar added to the top of my page-->
+        <nav role="navigation" aria-label="main-menu">
+          <!-- placeholder for my logo-->
+          <div class="logo" aria-label="website-logo">Logo</div>
+          <!--a list to hold navigation links-->
+          <ul class="nav-links">
+            <!--each line item has one link-->
+            <li><a href="#" aria-label="go to home page">Home</a></li>
+            <li>
+              <a href="#" target="_blank" aria-label="learn about Jupiter"
+                >Jupiter</a
+              >
+            </li>
+            <li>
+              <a href="#" target="-blank" aria-label="learn about saturn"
+                >Saturn</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="learn about Uranus"
+                >Uranus</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label=" learn about Neptune"
+                >Neptune</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- a section that holds two yellow boxes-->
+        <section class="content">
+          <!--a link styled to look like a button-->
+          <a
+            href="#"
+            class="styled-link"
+            aria-label="this is a link to another webpage"
+            >This is a link to another webpage</a
+          >
+          <button
+            class="styled-button"
+            aria-label="this is a button that needsfunctionality"
+          >
+            This is a button that needs<br />functionality
+          </button>
+        </section>
+        <section class="image">
+          <!--this image is from pexels, alt text is description for screen reader-->
+          <img
+            src="images/pexels-photo-2156883.jpeg"
+            alt="a beautiful image of a galaxy in space"
+            class="space-image"
+            role="img"
+          />
+        </section>
+      </main>
+    </body>
+  </body>
+</html>
